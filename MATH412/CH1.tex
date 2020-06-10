@@ -121,8 +121,18 @@
     \item (1.2 EX 4) 
     \begin{itemize}
         \item[(a)] If $a|b$ and $a|c$, prove that $a|(b+c)$. \\
-        Suppose $a|b$ and $a|c$. Then there exists an integer m and n such that $a|b = m$ and $a|c = n$. 
+        Suppose $a|b$ and $a|c$. Then there exists an integer m and n such that $a|b = m$ and $a|c = n$. Then by definition of divisibility from $a|b = m$ then b = am and c = an. \\
+        Then b + c = am + an = a(m+n) which can be rewritten as $a|(b+c)$ as desired. 
+        \item[(b)] If $a|b$ and $a|c$, prove that $a|(br + ct)$ for any $r,t \in \mathbb{Z}$. \\
+        Suppose $a|b$ and $a|c$. Then there exists an integer m and n such that $a|b = m$ and $a|c = n$. \\
+        Consider taking br + ct. Substitute b and c with what was found in the previous step then $br + ct = (am)r + (an)t = a(mr+ nt)$. Since $mr + nt \in \mathbb{Z}$ then by using the definition of divisibility it can be rewritten as $a|(br + ct)$ as desired. 
     \end{itemize}
+    \item (1.2 EX 6) If $a|b$ and $c|d$, prove that $ac|bd$. \\
+    Suppose that $a|b$ and $c|d$. Then there exists an integer m and n such that $a|b = m$ and $c|d = n$. \\
+    From definition of divisibility it can be concluded that b = am and d = cn. Suppose we take the product of bc. 
+    Then $b d = a m c n $ and since taking a product is commutative then $b d = a m c n = (ac)(mn)$ which follows to $ac |bd$. \\
+    
+    
 \end{enumerate}
 
 
