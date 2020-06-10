@@ -1,0 +1,130 @@
+% DOCUMENT FORMATING
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+
+% PACKAGES
+\usepackage{amsmath} % For extended formatting
+\usepackage{amssymb} % For math symbols
+\usepackage{amsthm} % For proof environment
+\usepackage{array} % For tables
+\usepackage{enumerate} % For lists
+\usepackage{extramarks} % For headers and footers
+\usepackage{blindtext}
+\usepackage{fancyhdr} % For custom headers
+\usepackage{graphicx} % For inserting images
+\usepackage{multicol} % For multiple columns
+\usepackage{verbatim} % For displaying code
+\usepackage{tkz-euclide}
+\usepackage{pgfplots}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem*{theorem*}{Theorem}
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+
+% SET UP HEADER AND FOOTER
+\pagestyle{fancy}
+\lhead{\MyCourse} % Top left header
+\chead{\MyTopicTitle} % Top center header
+\rhead{\MyAssignment} % Top right header
+\lfoot{\MyCampus} % Bottom left footer
+\cfoot{} % Bottom center footer
+\rfoot{\MySemester} % Bottom right footer
+\renewcommand\headrulewidth{0.4pt} % Size of the header rule
+\renewcommand\footrulewidth{0.4pt} % Size of the footer rule
+% ----------
+% TITLES AND NAMES 
+% ----------
+
+\newcommand{\MyCourse}{Math 412}
+\newcommand{\MyTopicTitle}{Practice Problems}
+\newcommand{\MyAssignment}{Abstract Algebra}
+\newcommand{\MySemester}{Fall 2020}
+\newcommand{\MyCampus}{University of Hawaii at Manoa}
+\begin{document}
+\subsection*{Arithmetic in Z Revisited}
+\begin{enumerate}
+    \item Find the quotient q and remainder r when a is divided by b without using technology 
+    \begin{itemize}
+        \item[(a)] $ a = 17; b = 4$ \\
+        17 = 4(4) + 1 \\
+        then it follows that q = 4 and r = 1
+        \item[b)] $a = 0 ; b = 19 $ \\
+        0 = 19(0) + 0 \\
+        q = 0 and r = 0 
+        \item[(c)] $a = -17; b = 4$ \\
+        -17 = (-5)(4) + 3 \\
+        Therefore, q = -5 and r = 3. 
+    \end{itemize}
+    \item Find the quotient q and remainder r when a is divided by b without using technology 
+    \begin{itemize}
+        \item[(a)] $a = -51 ; b = 6$ \\
+        -51 = 6(-9) + 3 \\
+        Therefore, r = 3 and q = -6
+        \item[(b)] a = 302 and b = 19 \\
+        a = bq + r \\
+        302 = (19)(1
+        \item[(c)] a = 2000 and b = 17 
+    \end{itemize}
+    \item (1.1 6) Let a be any integer and b and c be any positive integers. Suppose that when q is divided by c the quotient is k. Prove that when a is divided by bc then the quotient is also k. \\
+    Given that when q is divided by c then quotient is k. Then by the division algorithm then there exists a remainder r such that 
+    \begin{equation*}
+        q = c(k) + r'
+    \end{equation*}
+    such that $0 \leq r' < c$ \\
+    Since $a = b q + r$ from number 5 such that $0 \leq r < b$. 
+    \begin{equation*}
+        a = b (c(k) +r') + r 
+    \end{equation*}
+    $\to$
+    \begin{equation*}
+        a = b c k + b r' + r
+    \end{equation*}
+    $\to $
+    \begin{equation*}
+        a = (bc) k + (br' + r)
+    \end{equation*}
+    \item (1.1 10) Let n be a positive integer. Prove that a and c leave the same remainder when divided by n if and only if $a - c = n k$ for some integer k. \\
+    $\longrightarrow$
+    Suppose that a and c have the same remainder when divided by n. Then there exists a non-negative integers $q_1, q_2$ such that 
+    \begin{equation*}
+        a = nq_1 + r
+    \end{equation*}
+    and 
+    \begin{equation*}
+        c = n q_2 + r 
+    \end{equation*}
+    Then from subtracting a - c it yields that 
+    \begin{equation*}
+        a - c = nq_1 + r - nq_2 - r = n(q_1 - q_2)
+    \end{equation*}
+    Letting k = $q_1 - q_2$ gives as the result desired. \\
+    $\longleftarrow$ 
+    \item (1.2 EX 1 )Find the greatest common divisors of the given number. 
+    \begin{itemize}
+        \item[(a)] (56,72) \\
+        72 = 56(1) + 16 \\
+        56 = 16(3) + 8 \\
+        16 = 8(2) \\
+        (56,72) = 8 
+        \item[(b)] (24,138) \\
+        138 = 24(5) + 18 \\
+        24 = 18(1) + 6 \\
+        18 = 6(3) \\
+        Therefore, (24,138) = 6 
+        \item[(c)] (112, 57) \\
+        112 = 57(1) + 55 \\
+        57 = 55(1) + 2 \\
+        55 = 2(27) + 1 \\
+        2 = 1(2) \\
+        Therefore, the gdc(112,57) = 1
+    \end{itemize}
+    \item (1.2 EX 4) 
+    \begin{itemize}
+        \item[(a)] If $a|b$ and $a|c$, prove that $a|(b+c)$. \\
+        Suppose $a|b$ and $a|c$. Then there exists an integer m and n such that $a|b = m$ and $a|c = n$. 
+    \end{itemize}
+\end{enumerate}
+
+
+
+\end{document}
