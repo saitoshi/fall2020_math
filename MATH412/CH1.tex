@@ -131,10 +131,18 @@
     Suppose that $a|b$ and $c|d$. Then there exists an integer m and n such that $a|b = m$ and $c|d = n$. \\
     From definition of divisibility it can be concluded that b = am and d = cn. Suppose we take the product of bc. 
     Then $b d = a m c n $ and since taking a product is commutative then $b d = a m c n = (ac)(mn)$ which follows to $ac |bd$. \\
-    
-    
+    \item (1.2 EX 8) Prove that (n, n + 1) = 1 for every integer n. \\
+    We will prove this by using proof by induction. \\
+    \textbf{Base Case n = 1}  \\
+    Let n = 1. Then (1 , 1 + 1) = (1 , 2). The using the division algorithm. \\
+    2 = 1(2) \\
+    We see that the GCD of (1,2) = 1 so base case is met. \\
+    \textbf{Inductive Step} \\
+    Let P(n) be the preposition of (n, n+1) = 1. Let us assume that the statement P(k) holds true such that (k, k+1) = 1. Then prove that P(k+1) holds to be true.  \\
+    $(k+1, k+2) = 1$ \\
+    $(k+2) = (k+1)(1) + 1$ \\
+    $(k+1) = (1)(k+1)$ \\
+    Therefore, the GCD of $(k+1, k+2)$ from the division algorithm is 1. Thus inductive step is met. \\
+    Therefore, from proof by induction we have proved that $\forall n \in \mathbb{Z}$ that this is true. 
 \end{enumerate}
-
-
-
 \end{document}
